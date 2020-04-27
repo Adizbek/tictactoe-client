@@ -1,5 +1,5 @@
 import * as Colyseus from "colyseus.js";
 
-const client = new Colyseus.Client('ws://localhost:2567');
+const client = new Colyseus.Client(process.env.VUE_APP_URL);
 
 export default client;
